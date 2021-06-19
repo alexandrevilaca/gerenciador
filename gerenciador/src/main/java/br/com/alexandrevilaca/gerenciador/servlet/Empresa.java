@@ -1,17 +1,13 @@
-package gerenciador.servlet;
+package br.com.alexandrevilaca.gerenciador.servlet;
+
+import java.util.Date;
 
 public class Empresa {
+
 	private Integer id;
 	private String nome;
+	private Date dataAbertura = new Date();
 	
-	public Empresa() {
-	}
-
-	public Empresa(Integer id, String nome) {
-		this.id = id;
-		this.nome = nome;
-	}
-
 	public Integer getId() {
 		return id;
 	}
@@ -25,4 +21,11 @@ public class Empresa {
 		this.nome = nome;
 	}
 	
+	public void setDataAbertura(Date dataAbertura) {
+		this.dataAbertura = dataAbertura;
+	}
+	
+	public Date getDataAbertura() {
+		return dataAbertura;
+	}
 }
